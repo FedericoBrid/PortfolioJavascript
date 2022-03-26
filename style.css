@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Red+Hat+Mono:ital,wght@1,700&family=Varela+Round&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    overflow-x:hidden ;
+}
+.header{
+    position: relative;
+    z-index: 10;
+    background-color: #41729F;
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2em;
+}
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 23px;
+}
+.header-title{
+    padding-left:1.5em ;
+}
+.header-ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-li{
+    padding: 0 1em;
+}
+.header-a{
+    font-weight: 550;
+    font-size: large;
+    text-decoration: none;
+    color: #000;
+}
+.header-a:hover{
+    color: rgb(231, 231, 231);
+}
+.main{
+    padding: 2.5em 0;
+    height: calc(100vh - 70px);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-content{
+    color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 10;
+}
+.main-text{
+    padding-bottom: 3em;
+}
+.main-title{
+    font-size: x-large;
+    padding-bottom: 2.5em;
+}
+.main-animation-text{
+    font-weight: 200;
+    padding: 0.4em 0;
+}
+.fa-brands{
+    color: rgb(231, 231, 231);
+    font-size: 40px;
+}
+.fa-github{
+    padding-left: 0.5em;
+}
+.main-img{
+    width: 360px;
+    z-index: 10;
+}
+
+.skills{
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    background-color: red;
+}
+.projects{
+    height: 100vh;
+    background-color: rgb(209, 142, 142);
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+  
+  /* ---- particles.js container ---- */
+  .particles-js-canvas-el{
+    position: absolute;
+    z-index: 1;
+  }
+  #particles-js{
+    background: linear-gradient(90deg, rgba(34,33,42,1) 0%, rgba(44,44,74,1) 38%, rgba(23,68,78,1) 100%);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  

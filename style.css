@@ -7,8 +7,8 @@
     overflow-x:hidden ;
 }
 .header{
-    position: relative;
-    z-index: 10;
+    position: fixed;
+    z-index: 1000;
     background-color: #41729F;
     height: 70px;
     width: 100vw;
@@ -36,20 +36,22 @@
     align-items: center;
 }
 .header-li{
+    width: 100%;
     padding: 0 1em;
 }
 .header-a{
+    letter-spacing: 0.4px;
     font-weight: 550;
     font-size: large;
     text-decoration: none;
     color: #000;
 }
-.header-a:hover{
+.header-li:hover{
     color: rgb(231, 231, 231);
 }
 .main{
     padding: 2.5em 0;
-    height: calc(100vh - 70px);
+    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -65,33 +67,122 @@
     z-index: 10;
 }
 .main-text{
-    padding-bottom: 3em;
+    padding-bottom: 6em;
 }
 .main-title{
     font-size: x-large;
-    padding-bottom: 2.5em;
+}
+.main-title>span{
+    font-size: larger;
+    font-weight: bolder;
+    color:#41729F;
+}
+.main-subtitle{
+    font-weight: 200;
+    padding-bottom: 1em;
+}
+.main-animation{
+    height: 40px;
+    position: absolute;
+    overflow: hidden;
 }
 .main-animation-text{
     font-weight: 200;
     padding: 0.4em 0;
 }
+.main-animation-text:first-child{
+    animation: anim 8s infinite;
+}
+@keyframes anim{
+    0%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: -40px;
+    }
+    50%{
+        margin-top: -80px;
+    }
+    75%{
+        margin-top: -40px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+    
+}
 .fa-brands{
     color: rgb(231, 231, 231);
     font-size: 40px;
 }
-.fa-github{
-    padding-left: 0.5em;
+.fa-linkedin{
+    padding-right: 0.5em  
+}
+.button{
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Arabic';
+    font-weight: 200;
+    font-size: large;
+    background-color:rgb(231, 231, 231);
+    margin: 10px 0;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+.button:hover{
+    background-color: #41729F;
+    transition: background-color 0.5s ease;
+    color:rgb(231, 231, 231);;
 }
 .main-img{
     width: 360px;
     z-index: 10;
 }
-
 .skills{
     position: relative;
     z-index: 10;
     height: 100vh;
-    background-color: red;
+    background: url(img/waves.svg);
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.skills-title{
+    padding-top: 30px;
+    font-size: larger;
+    font-weight: 900;
+    font-size: 30px;
+}
+.skills-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.skills-card{
+    background-color: rgb(231, 231, 231);;
+    margin: 0.5em;
+    height: 100px;
+    width: 250px;
+    border-radius: 5px;
+    display: flex;
+    flex: 33.33%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 7px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 7px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 7px -3px rgba(0,0,0,0.75);
+}
+.skills-card>i{
+    color: #000;
+    font-size: 60px;
 }
 .projects{
     height: 100vh;
@@ -99,51 +190,15 @@
 }
 
 
-/* ---- stats.js ---- */
 
-.count-particles{
-    background: #000022;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 80px;
-    color: #13E8E9;
-    font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-  }
-  
-  .js-count-particles{
-    font-size: 1.1em;
-  }
-  
-  #stats,
-  .count-particles{
-    margin-top: 5px;
-    margin-left: 5px;
-  }
-  
-  #stats{
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-  }
-  
-  .count-particles{
-    border-radius: 0 0 3px 3px;
-  }
-  
-  /* ---- particles.js container ---- */
-  .particles-js-canvas-el{
-    position: absolute;
-    z-index: 1;
-  }
-  #particles-js{
-    background: linear-gradient(90deg, rgba(34,33,42,1) 0%, rgba(44,44,74,1) 38%, rgba(23,68,78,1) 100%);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-  }
+/* ---- particles.js container ---- */
+.particles-js-canvas-el{
+position: absolute;
+z-index: 1;
+}
+#particles-js{
+background: linear-gradient(90deg, rgba(34,33,42,1) 0%, #2c2c4a 38%, #17444e 100%);
+background-position: 50% 50%;
+background-repeat: no-repeat;
+}
   

@@ -188,15 +188,20 @@
     font-size: 60px;
 }
 .projects{
+    background-repeat: none;
+    object-fit: cover;
     height: 100vh;
-    background-color: rgb(231, 231, 231);
+    background: url(img/project.svg);
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
+.projects-title{
+    color: rgb(231, 231, 231);
+}
 .projects-container{
-    width: 100%;
+    width: 600px;
     height: 75%;
 }
 .projects-body{
@@ -206,11 +211,12 @@
     flex-direction: column;
 }
 .projects-body-img{
-    background-size: cover;
+    object-fit: cover;
     width: 380px;
     height: 270px;
 }
 .projects-data{
+    color: rgb(231, 231, 231);
     height: 50%;
     overflow: hidden;
     width: 380px;
@@ -240,16 +246,30 @@
     color: rgb(231, 231, 231);
     background-color: #41729F;
 }
+.project-data-button:hover{
+    background-color: rgb(231, 231, 231);;
+    color: #41729F;
+    font-weight: bolder;
+    transition: background-color 0.5s ease;
+}
+.swiper-button-next, .swiper-button-prev{
+    top: 40% !important;
+}
 .swiper-pagination{
     bottom: -5px;
 }
+.contact{
+    background-color: #969ba0;
+    height: 100vh;
+}
+
 /* ---- particles.js container ---- */
 .particles-js-canvas-el{
 position: absolute;
 z-index: 1;
 }
 #particles-js{
-background: linear-gradient(90deg, rgba(34,33,42,1) 0%, #2c2c4a 38%, #17444e 100%);
+background: linear-gradient(90deg, #22212a 0%, #2c2c4a 38%, #17444e 100%);
 background-position: 50% 50%;
 background-repeat: no-repeat;
 }

@@ -94,9 +94,23 @@
         </div>
     </section>
     <section class="contact" id="contact">
-
+        <form action="" method="POST" id="form" class="form">
+            <h3 class="form-title">Contact Me</h3>
+            <label for="name" class="form-label">Name:</label>
+            <i class="fa-solid fa-user-astronaut icon-user"></i>
+            <input type="text" name="name" placeholder="Name" class="input" required>
+            <label for="email" class="form-label">Email:</label>
+            <i class="fa-solid fa-envelope icon-email"></i>
+            <input type="email" name="email" placeholder="Email Address" class="input" required>
+            <textarea name="message" cols="50" rows="6" placeholder="Write your message" class="textArea" required></textarea>
+            <input type="submit" id="button" value="Send Email" class="button">
+       </form>
+       <img src="img/contact.png" alt="image Contact Me" class="contact-img">
     </section>
 
+    <!-- Email JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('wLoloqWkO27BmAVhx')</script>
     <!-- Particles js -->
     <script src="plugins/particles/js/particles.js"></script>
     <script src="plugins/particles/js/app.js"></script>

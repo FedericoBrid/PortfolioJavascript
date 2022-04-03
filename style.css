@@ -259,10 +259,63 @@
     bottom: -5px;
 }
 .contact{
-    background-color: #969ba0;
+    user-select: none;
+    background: linear-gradient(90deg, #951bda, #d792fd, #9cadc8);
     height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
+.form{
+    width: 400px;
+    height: 100%;
+    padding-top:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-title{
+    user-select: none;
+    font-weight: 900;
+    font-size: 30px;
+    padding-bottom: 2em;
+}
+.form-label{
+    font-weight: 600;
+}
+.input{
+    padding-left: 2.2em;
+    margin-bottom: 1em;
+    height: 2.5em;
+}
+.textArea{
+    resize: none;
+    padding: 0 0 0 0.5em;
+    margin-top: 1.5em;
+}
+.input,.textArea{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.icon-user,.icon-email{
+    position: relative;
+    color: #969ba0;
+}
+.icon-user{
+    top: 23px;
+    right: 115px;
+}
+.icon-email{
+    top: 24px;
+    right: 115px;
+}
+.contact-img{
+    object-fit: cover;
+    height: 400px;
+    width: 450px;
+}
 /* ---- particles.js container ---- */
 .particles-js-canvas-el{
 position: absolute;

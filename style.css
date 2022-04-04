@@ -276,6 +276,7 @@
     flex-direction: column;
 }
 .form-title{
+    text-shadow: 1px 1px 0px #fff;
     user-select: none;
     font-weight: 900;
     font-size: 30px;

@@ -33,3 +33,10 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+// Scroll Up button
+function scrollUp(){
+  const scrollUp = document.getElementById('scroll-up');
+  if(this.scrollY >=560) scrollUp.classList.add('scroll-show');
+    else scrollUp.classList.remove('scroll-show');
+}
+window.addEventListener('scroll', scrollUp )

@@ -24,7 +24,8 @@
             </ul>
         </nav>    
     </header>
-    <main class="main" id="particles-js">
+    
+    <section class="main" id="particles-js">
         <div class="main-content">
             <div class="main-text">
                 <h3 class="main-title">Hello, I'm <span>Federico Brid</span></h3>
@@ -39,11 +40,11 @@
                 <a href="https://www.linkedin.com/in/federicobrid/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/FedericoBrid" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
-            <a href="cv.pdf" download class="button-cv" target="_blank"><button class="button">Download CV</button></a>
+            <a href="cv.pdf" download class="button-cv" target="_blank"><button class="button">Resume<i class="fa-solid fa-download"></i></button></a>
         </div>
         <img class="main-img" src="img/uno.png" alt="User image">  
-    </main>
-    <section class="skills" id="skills">
+    </section>
+    <section class="skills"  id="skills">
         <h3 class="skills-title">My Skills</h3>
         <div class="skills-container">
             <div class="skills-card">
@@ -75,7 +76,7 @@
                     <div class="projects-data">
                         <h3 class="project-data-title">To Do List!</h3>
                         <p>To Do List web page with Responsive Design that uses LocalStorage</p>
-                       <span class="project-data-span">Click to <a href="https://todolist-javascript-topaz.vercel.app/" target="_blank" class="project-data-button">See more</a></span> 
+                        <span class="project-data-span">Click to <a href="https://todolist-javascript-topaz.vercel.app/" target="_blank" class="project-data-button">See more</a></span> 
                     </div>
                 </div>
                 <div class="projects-body swiper-slide">
@@ -104,10 +105,14 @@
             <input type="email" name="email" placeholder="Email Address" class="input" required>
             <textarea name="message" cols="50" rows="6" placeholder="Write your message" class="textArea" required></textarea>
             <input type="submit" id="button" value="Send Email" class="button">
-       </form>
-       <img src="img/contact.png" alt="image Contact Me" class="contact-img">
+        </form>
+        <img src="img/contact.png" alt="image Contact Me" class="contact-img">
     </section>
 
+    <a href="#" class="scroll-up" id="scroll-up"><i class="fa-solid fa-angle-up scroll-icon"></i></a>
+    
+    <!-- FullPage js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Email JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">emailjs.init('wLoloqWkO27BmAVhx')</script>

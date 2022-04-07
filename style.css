@@ -152,8 +152,7 @@
     position: relative;
     z-index: 10;
     height: 100vh;
-    background: url(img/waves.svg);
-    background-repeat: none;
+    background: url(img/waves.svg) no-repeat;
     background-size: cover;
     display: flex;
     justify-content: space-evenly;
@@ -198,6 +197,7 @@
     object-fit: cover;
     height: 100vh;
     background: url(img/project.svg) no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -350,6 +350,153 @@
 }
 .scroll-show{
     bottom: 3em;
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) and (max-height: 768px) {
+    .skills-container{
+        width: 90%;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 1024px){
+    .main{
+        flex-direction: column-reverse;
+    }
+    .main-img{
+        display: none;
+    }
+    .contact{
+        flex-direction: column-reverse;
+    }
+    .form{
+        padding-top: 0;
+        height: 50%;
+    }
+    .contact-img{
+    object-fit: contain;
+    height: 300px;
+    width: 400px;
+    }
+    .skills-title{
+        padding-top: 0;
+        font-size: 20px;
+        height: 40px;
+    }
+    .skills-container{
+        width: 90%;
+        flex-direction: row;
+        height: 60%;
+    }
+    .swiper-pagination{
+        display: none;
+    }
+    .form-title{
+        font-size: 20px;
+        height: 40px;
+        padding-bottom: 0;
+    }
+    .textArea{
+        height: 60px;
+        width: 80%;
+    }   
+}
+@media screen and (max-width: 568px) and (max-height: 920px){
+    .header{
+        display: none;
+    }
+    .projects{
+        height: 100vh;
+    }
+    .swiper{
+        width: 100%;
+    }
+    .swiper-button-next,.swiper-button-prev{
+        display: none !important;
+    }
+    .projects-body-img{
+        width: 280px;
+        height: 200px;
+    }
+    .projects-data{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 480px) and (max-height: 320px){
+    .header{
+        display: none;
+    }
+    .main{
+        height: 100%;
+    }
+    .main-img{
+        width: 200px;
+    }
+    .skills{
+        height: 100%;
+    }
+    .swiper{
+        width: 100%;
+    }
+    .swiper-button-next,.swiper-button-prev{
+        display: none !important;
+    }
+    .projects{
+        height: 100%;
+    }
+    .projects-body-img{
+        width: 280px;
+        height: 200px;
+    }
+    .projects-data{
+        width: 80%;
+    }
+    .contact{
+        justify-content: flex-end;
+    }
+    .contact-img{
+        display: none;
+    }
+    .form{
+        height: 100%;
+        padding-top: 30px;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 320px) and (max-height: 480px){
+    .header{
+        display: none;
+    }
+    .skills{
+        height: 100%;
+    }
+    .projects{
+        height: 100%;
+    }
+    .swiper{
+        width: 100%;
+    }
+    .swiper-button-next,.swiper-button-prev{
+        display: none !important;
+    }
+    .projects-body-img{
+        width: 280px;
+        height: 200px;
+    }
+    .projects-data{
+        width: 80%;
+    }
+    .contact{
+        justify-content: flex-end;
+    }
+    .contact-img{
+        display: none;
+    }
+    .form{
+        height: 100%;
+        padding-top: 30px;
+        width: 80%;
+    }
 }
 /* ---- particles.js container ---- */
 .particles-js-canvas-el{

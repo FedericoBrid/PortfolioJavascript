@@ -507,18 +507,24 @@
         width: 80%;
     }
 }
-@media screen and (max-width: 320px) and (max-height: 720px){
+@media screen and (max-width: 320px) and (max-height: 700px){
     .main{
         height: 100%;
     }
     .main-img{
         width: 50%;
     }
+    .skills{
+        height: 100%;
+    }
     .form{
         height: 60%;
     }
     .contact-img{
         height: 30%;
+    }
+    .input{
+        padding-left: 4em;
     }
 }
 /* ---- particles.js container ---- */

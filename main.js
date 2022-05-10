@@ -1,7 +1,7 @@
 // Swiper Slide Projects
 let swiper = new Swiper(".projects-container", {
     cssMode: true,
-    loop:true,
+    loop:false,
     slidesPerView: 1,
     navigation: {
       nextEl: ".swiper-button-next",

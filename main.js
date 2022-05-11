@@ -1,5 +1,5 @@
 // Swiper Slide Projects
-let swiper = new Swiper(".projects-container", {
+const swiper = new Swiper(".projects-container", {
     cssMode: true,
     loop:false,
     slidesPerView: 1,

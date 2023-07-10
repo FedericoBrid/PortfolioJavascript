@@ -97,17 +97,30 @@
 .main-animation-text:first-child{
     animation: anim 8s infinite;
 }
+
 @keyframes anim{
     0%{
         margin-top: 0;
     }
-    25%{
+    15%{
         margin-top: -40px;
     }
-    50%{
+    25%{
         margin-top: -80px;
     }
+    35%{
+        margin-top: -120px;
+    }
+    50%{
+        margin-top: -170px;
+    }
+    65%{
+        margin-top: -120px;
+    }
     75%{
+        margin-top: -80px;
+    }
+    85%{
         margin-top: -40px;
     }
     100%{
@@ -160,10 +173,14 @@
     flex-direction: column; 
 }
 .skills-title, .projects-title{
+    overflow: hidden;
+    height: 10%;
     user-select: none;
-    padding-top: 45px;
+    margin-top: 45px;
+    width: 100%;
     font-weight: 900;
     font-size: 30px;
+    text-align: center;
 }
 .skills-container{
     width: 80%;
@@ -177,11 +194,10 @@
 .skills-card{
     background-color: rgb(231, 231, 231);
     margin: 0.5em;
-    height: 100px;
-    width: 250px;
+    height: 120px;
+    width: 300px;
     border-radius: 5px;
     display: flex;
-    flex: 33.33%;
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 7px -3px rgba(0,0,0,0.75);
@@ -217,7 +233,7 @@
     flex-direction: column;
 }
 .projects-body-img{
-    object-fit: cover;
+    object-fit: fill;
     width: 380px;
     height: 270px;
 }
